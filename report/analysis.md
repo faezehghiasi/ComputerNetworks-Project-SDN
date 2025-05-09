@@ -17,7 +17,19 @@
 - Observed: h1 could not reach others; others could communicate normally
 - After `link h1 s1 up`, full connectivity restored
 
-## Why Diameter = 2?
-- All communication passes through a central switch
-- Path: host A → switch → host B → exactly 2 hops
+## Why is the network diameter always 2 in Single topology?
+
+In a single-switch (star) topology:
+- All hosts connect directly to one switch.
+- So, communication from host A to host B always goes:
+  A → Switch → B = 2 hops
+→ Therefore, diameter = 2 (maximum path length).
+
+## Why does Linear topology have larger diameter?
+
+In a Linear topology:
+- Hosts are connected in a chain through switches.
+- Host A to host Z may go through multiple hops:
+  A → s1 → B → s2 → C → s3 → D ...
+→ Diameter increases as the number of hops grows.
 

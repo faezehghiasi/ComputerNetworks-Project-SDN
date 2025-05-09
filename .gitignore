@@ -1,0 +1,26 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Mininet logs or dumps
+*.log
+*.pcap
+
+# Output results
+outputs/
+*.txt
+
+# Virtual environments
+env/
+venv/
+ENV/
+
+# Backup files
+*~
+*.bak
+
