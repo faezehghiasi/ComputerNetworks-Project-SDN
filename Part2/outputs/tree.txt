@@ -113,4 +113,38 @@ Connecting to host 10.0.0.1, port 5201
 
 iperf Done.
 mininet> 
+-----------------------------------------------------------------------------------------------------
+saeed@saeed-VirtualBox:~/ComputerNetworks-Project-SDN/Part2$ sudo mn --custom topologies/tree_topo.py --topo tree,2,2
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h3 h4 h6 h7 
+*** Adding switches:
+s1 s2 s5 
+*** Adding links:
+(h3, s2) (h4, s2) (h6, s5) (h7, s5) (s2, s1) (s5, s1) 
+*** Configuring hosts
+h3 h4 h6 h7 
+*** Starting controller
+c0 
+*** Starting 3 switches
+s1 s2 s5 ...
+*** Starting CLI:
+mininet> h3 ping -c 10 h7
+PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.
+64 bytes from 10.0.0.4: icmp_seq=1 ttl=64 time=8.06 ms
+64 bytes from 10.0.0.4: icmp_seq=2 ttl=64 time=1.12 ms
+64 bytes from 10.0.0.4: icmp_seq=3 ttl=64 time=0.114 ms
+64 bytes from 10.0.0.4: icmp_seq=4 ttl=64 time=0.134 ms
+64 bytes from 10.0.0.4: icmp_seq=5 ttl=64 time=0.127 ms
+64 bytes from 10.0.0.4: icmp_seq=6 ttl=64 time=0.120 ms
+64 bytes from 10.0.0.4: icmp_seq=7 ttl=64 time=0.116 ms
+64 bytes from 10.0.0.4: icmp_seq=8 ttl=64 time=0.114 ms
+64 bytes from 10.0.0.4: icmp_seq=9 ttl=64 time=0.266 ms
+64 bytes from 10.0.0.4: icmp_seq=10 ttl=64 time=0.103 ms
+
+--- 10.0.0.4 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9216ms
+rtt min/avg/max/mdev = 0.103/1.028/8.062/2.363 ms
+mininet> 
 

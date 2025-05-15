@@ -73,4 +73,25 @@ Connecting to host 10.0.0.1, port 5201
 
 iperf Done.
 mininet> 
+---------------------------------------------------------------------------------
+saeed@saeed-VirtualBox:~/ComputerNetworks-Project-SDN/Part2$ sudo python3 topologies/torus_topo.py
+mininet> h00 ping -c 10 h11
+PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.
+64 bytes from 10.0.0.4: icmp_seq=1 ttl=64 time=7.33 ms
+64 bytes from 10.0.0.4: icmp_seq=2 ttl=64 time=0.955 ms
+64 bytes from 10.0.0.4: icmp_seq=3 ttl=64 time=0.127 ms
+64 bytes from 10.0.0.4: icmp_seq=4 ttl=64 time=0.063 ms
+64 bytes from 10.0.0.4: icmp_seq=5 ttl=64 time=0.152 ms
+64 bytes from 10.0.0.4: icmp_seq=6 ttl=64 time=0.221 ms
+64 bytes from 10.0.0.4: icmp_seq=7 ttl=64 time=0.184 ms
+64 bytes from 10.0.0.4: icmp_seq=8 ttl=64 time=0.052 ms
+64 bytes from 10.0.0.4: icmp_seq=9 ttl=64 time=0.122 ms
+64 bytes from 10.0.0.4: icmp_seq=10 ttl=64 time=0.107 ms
+
+--- 10.0.0.4 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9168ms
+rtt min/avg/max/mdev = 0.052/0.931/7.335/2.149 ms
+mininet> 
+
+
 

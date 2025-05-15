@@ -104,3 +104,40 @@ Connecting to host 10.0.0.1, port 5201
 iperf Done.
 mininet> 
 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+sudo mn --custom topologies/minimal_topo.py --topo minimal
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h1 h2 
+*** Adding switches:
+s1 
+*** Adding links:
+(h1, s1) (h2, s1) 
+*** Configuring hosts
+h1 h2 
+*** Starting controller
+c0 
+*** Starting 1 switches
+s1 ...
+*** Starting CLI:
+mininet> h1 ping -c 10 h2
+PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
+64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=5.71 ms
+64 bytes from 10.0.0.2: icmp_seq=2 ttl=64 time=0.884 ms
+64 bytes from 10.0.0.2: icmp_seq=3 ttl=64 time=0.103 ms
+64 bytes from 10.0.0.2: icmp_seq=4 ttl=64 time=0.106 ms
+64 bytes from 10.0.0.2: icmp_seq=5 ttl=64 time=0.088 ms
+64 bytes from 10.0.0.2: icmp_seq=6 ttl=64 time=0.113 ms
+64 bytes from 10.0.0.2: icmp_seq=7 ttl=64 time=0.071 ms
+64 bytes from 10.0.0.2: icmp_seq=8 ttl=64 time=0.106 ms
+64 bytes from 10.0.0.2: icmp_seq=9 ttl=64 time=0.101 ms
+64 bytes from 10.0.0.2: icmp_seq=10 ttl=64 time=0.150 ms
+
+--- 10.0.0.2 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9199ms
+rtt min/avg/max/mdev = 0.071/0.744/5.719/1.674 ms
+mininet> 
+

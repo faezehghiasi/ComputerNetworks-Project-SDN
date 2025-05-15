@@ -85,4 +85,25 @@ Connecting to host 10.0.0.1, port 5201
 
 iperf Done.
 mininet> 
+------------------------------------------------------------------------------
+sudo python3 topologies/full_topo.py
+mininet> h1 ping -c 10 h4
+PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.
+64 bytes from 10.0.0.4: icmp_seq=1 ttl=64 time=6.18 ms
+64 bytes from 10.0.0.4: icmp_seq=2 ttl=64 time=0.933 ms
+64 bytes from 10.0.0.4: icmp_seq=3 ttl=64 time=0.116 ms
+64 bytes from 10.0.0.4: icmp_seq=4 ttl=64 time=0.171 ms
+64 bytes from 10.0.0.4: icmp_seq=5 ttl=64 time=0.111 ms
+64 bytes from 10.0.0.4: icmp_seq=6 ttl=64 time=0.131 ms
+64 bytes from 10.0.0.4: icmp_seq=7 ttl=64 time=0.125 ms
+64 bytes from 10.0.0.4: icmp_seq=8 ttl=64 time=0.123 ms
+64 bytes from 10.0.0.4: icmp_seq=9 ttl=64 time=0.189 ms
+64 bytes from 10.0.0.4: icmp_seq=10 ttl=64 time=0.124 ms
+
+--- 10.0.0.4 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9150ms
+rtt min/avg/max/mdev = 0.111/0.820/6.183/1.803 ms
+mininet> 
+
+
 
