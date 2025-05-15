@@ -11,10 +11,6 @@ Thumbs.db
 *.log
 *.pcap
 
-# Output results
-outputs/
-*.txt
-
 # Virtual environments
 env/
 venv/

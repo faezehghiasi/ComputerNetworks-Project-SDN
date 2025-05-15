@@ -1,0 +1,88 @@
+ sudo python3 topologies/full_topo.py
+mininet> pingall
+*** Ping: testing ping reachability
+h1 -> h2 h3 h4 
+h2 -> h1 h3 h4 
+h3 -> h1 h2 h4 
+h4 -> h1 h2 h3 
+*** Results: 0% dropped (12/12 received)
+mininet> h1 iperf3 -s &
+mininet> h4 iperf3 -c h1
+Connecting to host 10.0.0.1, port 5201
+[  4] local 10.0.0.4 port 52214 connected to 10.0.0.1 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  7.66 GBytes  65.8 Gbits/sec  628    727 KBytes       
+[  4]   1.00-2.00   sec  7.75 GBytes  66.4 Gbits/sec    3    785 KBytes       
+[  4]   2.00-3.00   sec  6.83 GBytes  58.8 Gbits/sec  255    895 KBytes       
+[  4]   3.00-4.00   sec  7.58 GBytes  65.1 Gbits/sec    5    686 KBytes       
+[  4]   4.00-5.00   sec  7.62 GBytes  65.5 Gbits/sec    9    704 KBytes       
+[  4]   5.00-6.00   sec  7.04 GBytes  60.5 Gbits/sec    4   1.11 MBytes       
+[  4]   6.00-7.00   sec  6.47 GBytes  55.6 Gbits/sec  743   2.05 MBytes       
+[  4]   7.00-8.00   sec  6.35 GBytes  54.6 Gbits/sec  1042    738 KBytes       
+[  4]   8.00-9.00   sec  7.43 GBytes  63.8 Gbits/sec    0    923 KBytes       
+[  4]   9.00-10.00  sec  7.85 GBytes  67.5 Gbits/sec    1    993 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec  72.6 GBytes  62.4 Gbits/sec  2690             sender
+[  4]   0.00-10.00  sec  72.6 GBytes  62.4 Gbits/sec                  receiver
+
+iperf Done.
+mininet> h1 iperf3 -s -u & 
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+Accepted connection from 10.0.0.4, port 52212
+[  5] local 10.0.0.1 port 5201 connected to 10.0.0.4 port 52214
+[ ID] Interval           Transfer     Bandwidth
+[  5]   0.00-1.00   sec  7.35 GBytes  63.2 Gbits/sec                  
+[  5]   1.00-2.00   sec  7.77 GBytes  66.7 Gbits/sec                  
+[  5]   2.00-3.00   sec  6.83 GBytes  58.6 Gbits/sec                  
+[  5]   3.00-4.00   sec  7.58 GBytes  65.1 Gbits/sec                  
+[  5]   4.00-5.00   sec  7.64 GBytes  65.7 Gbits/sec                  
+[  5]   5.00-6.00   sec  7.04 GBytes  60.5 Gbits/sec                  
+[  5]   6.00-7.00   sec  6.53 GBytes  56.1 Gbits/sec                  
+[  5]   7.00-8.00   sec  6.26 GBytes  53.7 Gbits/sec                  
+[  5]   8.00-9.00   sec  7.43 GBytes  63.8 Gbits/sec                  
+[  5]   9.00-10.00  sec  7.86 GBytes  67.6 Gbits/sec                  
+[  5]  10.00-10.04  sec   312 MBytes  67.7 Gbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  5]   0.00-10.04  sec  72.6 GBytes  62.1 Gbits/sec  2690             sender
+[  5]   0.00-10.04  sec  72.6 GBytes  62.1 Gbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+iperf3: parameter error - some option you are trying to set is client only
+
+Usage: iperf [-s|-c host] [options]
+       iperf [-h|--help] [-v|--version]
+
+Server or Client:
+  -p, --port      #         server port to listen on/connect to
+  -f, --format    [kmgKMG]  format to report: Kbits, Mbits, KBytes, MBytes
+  -i, --interval  #         seconds between periodic bandwidth reports
+  -F, --file name           xmit/recv the specified file
+  -A, --affinity n/n,m      set CPU affinity
+  -B, --bind   mininet> 
+mininet> h4 iperf3 -c h1 -u -b 10M
+Connecting to host 10.0.0.1, port 5201
+[  4] local 10.0.0.4 port 46936 connected to 10.0.0.1 port 5201
+[ ID] Interval           Transfer     Bandwidth       Total Datagrams
+[  4]   0.00-1.00   sec  1.08 MBytes  9.04 Mbits/sec  138  
+[  4]   1.00-2.00   sec  1.20 MBytes  10.0 Mbits/sec  153  
+[  4]   2.00-3.00   sec  1.19 MBytes  9.96 Mbits/sec  152  
+[  4]   3.00-4.00   sec  1.20 MBytes  10.0 Mbits/sec  153  
+[  4]   4.00-5.00   sec  1.19 MBytes  9.96 Mbits/sec  152  
+[  4]   5.00-6.00   sec  1.20 MBytes  10.0 Mbits/sec  153  
+[  4]   6.00-7.00   sec  1.20 MBytes  10.0 Mbits/sec  153  
+[  4]   7.00-8.00   sec  1.20 MBytes  10.1 Mbits/sec  154  
+[  4]   8.00-9.00   sec  1.18 MBytes  9.89 Mbits/sec  151  
+[  4]   9.00-10.00  sec  1.19 MBytes  9.97 Mbits/sec  152  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  4]   0.00-10.00  sec  11.8 MBytes  9.90 Mbits/sec  0.459 ms  0/1511 (0%)  
+[  4] Sent 1511 datagrams
+
+iperf Done.
+mininet> 
+

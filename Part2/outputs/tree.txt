@@ -1,0 +1,116 @@
+sudo mn --custom topologies/tree_topo.py --topo tree,2,2
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h3 h4 h6 h7 
+*** Adding switches:
+s1 s2 s5 
+*** Adding links:
+(h3, s2) (h4, s2) (h6, s5) (h7, s5) (s2, s1) (s5, s1) 
+*** Configuring hosts
+h3 h4 h6 h7 
+*** Starting controller
+c0 
+*** Starting 3 switches
+s1 s2 s5 ...
+*** Starting CLI:
+mininet> pingall
+*** Ping: testing ping reachability
+h3 -> h4 h6 h7 
+h4 -> h3 h6 h7 
+h6 -> h3 h4 h7 
+h7 -> h3 h4 h6 
+*** Results: 0% dropped (12/12 received)
+mininet> 
+Interrupt
+mininet> h3 iperf3 -s &
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+mininet> h7 iperf3 -c h3
+Connecting to host 10.0.0.1, port 5201
+[  4] local 10.0.0.4 port 50796 connected to 10.0.0.1 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  3.99 GBytes  34.3 Gbits/sec  189   2.52 MBytes       
+[  4]   1.00-2.00   sec  3.81 GBytes  32.7 Gbits/sec    0   2.52 MBytes       
+[  4]   2.00-3.00   sec  4.12 GBytes  35.4 Gbits/sec    0   2.52 MBytes       
+[  4]   3.00-4.00   sec  4.34 GBytes  37.3 Gbits/sec    0   2.52 MBytes       
+[  4]   4.00-5.00   sec  4.29 GBytes  36.8 Gbits/sec    0   2.52 MBytes       
+[  4]   5.00-6.00   sec  4.35 GBytes  37.3 Gbits/sec    0   2.52 MBytes       
+[  4]   6.00-7.00   sec  4.29 GBytes  36.9 Gbits/sec    0   2.52 MBytes       
+[  4]   7.00-8.00   sec  4.45 GBytes  38.2 Gbits/sec    0   2.52 MBytes       
+[  4]   8.00-9.00   sec  4.32 GBytes  37.1 Gbits/sec    0   2.52 MBytes       
+[  4]   9.00-10.00  sec  4.33 GBytes  37.2 Gbits/sec    0   2.52 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec  42.3 GBytes  36.3 Gbits/sec  189             sender
+[  4]   0.00-10.00  sec  42.3 GBytes  36.3 Gbits/sec                  receiver
+
+iperf Done.
+mininet> h3 iperf3 -s -u &
+Accepted connection from 10.0.0.4, port 50794
+[  5] local 10.0.0.1 port 5201 connected to 10.0.0.4 port 50796
+[ ID] Interval           Transfer     Bandwidth
+[  5]   0.00-1.00   sec  3.89 GBytes  33.4 Gbits/sec                  
+[  5]   1.00-2.00   sec  3.74 GBytes  32.2 Gbits/sec                  
+[  5]   2.00-3.00   sec  4.13 GBytes  35.5 Gbits/sec                  
+[  5]   3.00-4.00   sec  4.34 GBytes  37.3 Gbits/sec                  
+[  5]   4.00-5.00   sec  4.30 GBytes  36.9 Gbits/sec                  
+[  5]   5.00-6.00   sec  4.36 GBytes  37.5 Gbits/sec                  
+[  5]   6.00-7.00   sec  4.26 GBytes  36.6 Gbits/sec                  
+[  5]   7.00-8.00   sec  4.46 GBytes  38.3 Gbits/sec                  
+[  5]   8.00-9.00   sec  4.31 GBytes  37.0 Gbits/sec                  
+[  5]   9.00-10.00  sec  4.34 GBytes  37.3 Gbits/sec                  
+[  5]  10.00-10.04  sec   163 MBytes  36.3 Gbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  5]   0.00-10.04  sec  42.3 GBytes  36.2 Gbits/sec  189             sender
+[  5]   0.00-10.04  sec  42.3 GBytes  36.2 Gbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+bash: hiperf3: command not found
+mininet> h3 iperf3 -s -u &
+iperf3: parameter error - some option you are trying to set is client only
+
+Usage: iperf [-s|-c host] [options]
+       iperf [-h|--help] [-v|--version]
+
+Server or Client:
+  -p, --port      #         server port to listen on/connect to
+  -f, --format    [kmgKMG]  format to report: Kbits, Mbits, KBytes, MBytes
+  -i, --interval  #         seconds between periodic bandwidth reports
+  -F, --file name           xmit/recv the specified file
+  -A, --affinity n/n,m      set CPU affinity
+  -B, --bind      <host>    bind to a specific interface
+  -V, --verbose             more detailed output
+  -J, --json                output in JSON format
+  -d, --debug               emit debugging output
+  -v, --version             show version information and quit
+  -h, --help                show this message and quit
+Server specific:
+  -s, --server              run in server mode
+  -D, --daemon              run the server as a daemon
+  -1, --one-off             handle one client connection thenmininet> 
+mininet> h7 iperf3 -c h3 -u -b 10M
+Connecting to host 10.0.0.1, port 5201
+[  4] local 10.0.0.4 port 43064 connected to 10.0.0.1 port 5201
+[ ID] Interval           Transfer     Bandwidth       Total Datagrams
+[  4]   0.00-1.00   sec  1.08 MBytes  9.03 Mbits/sec  138  
+[  4]   1.00-2.00   sec  1.20 MBytes  10.0 Mbits/sec  153  
+[  4]   2.00-3.00   sec  1.19 MBytes  9.96 Mbits/sec  152  
+[  4]   3.00-4.00   sec  1.20 MBytes  9.99 Mbits/sec  153  
+[  4]   4.00-5.00   sec  1.19 MBytes  10.0 Mbits/sec  152  
+[  4]   5.00-6.00   sec  1.20 MBytes  9.99 Mbits/sec  153  
+[  4]   6.00-7.00   sec  1.20 MBytes  10.1 Mbits/sec  154  
+[  4]   7.00-8.00   sec  1.18 MBytes  9.89 Mbits/sec  151  
+[  4]   8.00-9.02   sec  1.20 MBytes  9.82 Mbits/sec  153  
+[  4]   9.02-10.01  sec  1.20 MBytes  10.3 Mbits/sec  154  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  4]   0.00-10.01  sec  11.8 MBytes  9.91 Mbits/sec  0.853 ms  0/1513 (0%)  
+[  4] Sent 1513 datagrams
+
+iperf Done.
+mininet> 
+
