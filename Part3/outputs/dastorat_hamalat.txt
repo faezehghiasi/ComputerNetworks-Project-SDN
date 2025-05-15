@@ -1,0 +1,28 @@
+saeed@saeed-VirtualBox:~/ComputerNetworks-Project-SDN/Part3$ sudo mnexec -a $(pgrep -f 'bash.*h2') bash
+root@saeed-VirtualBox:~/ComputerNetworks-Project-SDN/Part3# hping3 --udp -p 12345 -d 120 --flood 10.0.0.3
+HPING 10.0.0.3 (h2-eth0 10.0.0.3): udp mode set, 28 headers + 120 data bytes
+hping in flood mode, no replies will be shown
+^C
+--- 10.0.0.3 hping statistic ---
+8213848 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+root@saeed-VirtualBox:~/ComputerNetworks-Project-SDN/Part3# hping3 --udp -p 12345 -d 120 --flood 10.0.0.3
+HPING 10.0.0.3 (h2-eth0 10.0.0.3): udp mode set, 28 headers + 120 data bytes
+hping in flood mode, no replies will be shown
+^C
+--- 10.0.0.3 hping statistic ---
+1538960 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+root@saeed-VirtualBox:~/ComputerNetworks-Project-SDN/Part3# exit
+exit
+saeed@saeed-VirtualBox:~/ComputerNetworks-Project-SDN/Part3$ sudo mnexec -a $(pgrep -f 'bash.*h2') bash
+root@saeed-VirtualBox:~/ComputerNetworks-Project-SDN/Part3# hping3 --udp -p 12345 -d 120 --flood 10.0.0.3
+HPING 10.0.0.3 (h2-eth0 10.0.0.3): udp mode set, 28 headers + 120 data bytes
+hping in flood mode, no replies will be shown
+^C
+--- 10.0.0.3 hping statistic ---
+625231 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+root@saeed-VirtualBox:~/ComputerNetworks-Project-SDN/Part3# exit
+exit
+

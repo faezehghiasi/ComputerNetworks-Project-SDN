@@ -1,0 +1,623 @@
+ ryu-manager ryu_qos_lb.py
+loading app ryu_qos_lb.py
+loading app ryu.controller.ofp_handler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+instantiating app ryu_qos_lb.py of QoSandLB
+Register dpid 6
+Register dpid 4
+Register dpid 3
+Register dpid 73334763579207
+Register dpid 2
+Register dpid 5
+Register dpid 1
+LB rules: HTTP→port 1, SSH→port 2 on dp 1
+UDP Flood? dp=3 port=1 rate=52.2 Mb/s
+Drop‑rule installed on dp 3 port 1 (idle 20s)
+UDP Flood? dp=1 port=2 rate=52.2 Mb/s
+Drop‑rule installed on dp 1 port 2 (idle 20s)
+UDP Flood? dp=2 port=3 rate=52.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=59.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=95.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=71.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=67.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=55.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=84.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=54.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=64.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=71.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=74.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=62.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=98.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=67.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=64.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=54.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=80.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=94.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=98.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=52.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=72.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=56.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=95.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=76.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=88.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=51.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=63.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=63.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=50.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=92.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=88.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=69.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=65.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=56.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=60.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=60.3 Mb/s ryu-manager ryu_qos_lb.py
+loading app ryu_qos_lb.py
+loading app ryu.controller.ofp_handler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+instantiating app ryu_qos_lb.py of QoSandLB
+Register dpid 6
+Register dpid 4
+Register dpid 3
+Register dpid 73334763579207
+Register dpid 2
+Register dpid 5
+Register dpid 1
+LB rules: HTTP→port 1, SSH→port 2 on dp 1
+UDP Flood? dp=3 port=1 rate=52.2 Mb/s
+Drop‑rule installed on dp 3 port 1 (idle 20s)
+UDP Flood? dp=1 port=2 rate=52.2 Mb/s
+Drop‑rule installed on dp 1 port 2 (idle 20s)
+UDP Flood? dp=2 port=3 rate=52.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=59.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=95.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=71.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=67.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=55.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=84.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=54.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=64.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=71.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=74.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=62.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=98.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=67.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=64.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=54.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=80.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=94.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=98.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=52.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=72.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=56.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=95.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=76.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=88.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=51.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=63.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=63.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=50.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=92.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=88.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=69.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=65.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=56.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=60.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=60.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=56.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=97.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=83.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=72.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=71.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=63.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=91.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=65.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=60.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=68.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=62.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=56.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=79.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=62.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=98.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=83.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=88.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=86.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=100.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=60.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=65.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=82.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=100.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=71.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=86.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=76.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=80.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=59.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=50.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=83.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=76.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=81.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=85.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=76.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=83.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=87.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=80.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=94.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=96.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=71.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=51.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=62.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=57.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=53.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=84.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=72.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=86.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=75.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=69.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=81.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=70.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=60.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=51.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=89.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=79.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=96.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=70.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=51.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=1 port=2 rate=51.2 Mb/s
+Drop‑rule installed on dp 1 port 2 (idle 20s)
+UDP Flood? dp=3 port=1 rate=51.2 Mb/s
+Drop‑rule installed on dp 3 port 1 (idle 20s)
+UDP Flood? dp=2 port=3 rate=83.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=86.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=72.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=67.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=63.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=58.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=56.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=97.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=83.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=72.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=71.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=63.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=91.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=65.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=60.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=68.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=62.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=56.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=79.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=62.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=98.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=83.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=88.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=86.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=100.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=60.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=65.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=82.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=100.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=71.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=86.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=76.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=80.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=59.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=50.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=83.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=76.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=81.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=85.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=76.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=83.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=87.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=80.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=94.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=96.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=71.8 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=51.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=62.1 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=57.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=53.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=84.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=72.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=86.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=75.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=69.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=81.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=70.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=60.6 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=51.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=89.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=79.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=96.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=70.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=51.3 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=1 port=2 rate=51.2 Mb/s
+Drop‑rule installed on dp 1 port 2 (idle 20s)
+UDP Flood? dp=3 port=1 rate=51.2 Mb/s
+Drop‑rule installed on dp 3 port 1 (idle 20s)
+UDP Flood? dp=2 port=3 rate=83.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.5 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=99.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=86.2 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=72.7 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=67.4 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=63.9 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+UDP Flood? dp=2 port=3 rate=58.0 Mb/s
+Drop‑rule installed on dp 2 port 3 (idle 20s)
+
