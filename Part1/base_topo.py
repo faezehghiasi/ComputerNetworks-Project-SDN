@@ -6,7 +6,7 @@ import argparse
 class SingleSwitchTopo(Topo):
     def build(self, n=2):
         switch = self.addSwitch('s1')
-        for i in range(1, n + 5):
+        for i in range(1, n + 1):
             host = self.addHost('h{}'.format(i))  # <-- fixed for Python < 3.6
             self.addLink(host, switch)
 
